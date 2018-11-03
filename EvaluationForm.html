@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1 style="text-align:center;">專題題目&#58;</h1>
+<div align = "center">
+<div class = "meber"><h2 style="text-align:center">組別&#58;&nbsp;</h2></div>
+<div class = "meber"><h2 style="text-align:center">成員&#58;&nbsp;</h2></div>
+<div class = "meber"><h2 style="text-align:center">指導老師&#58;&nbsp;</h2></div>
+</div>
+
+</head>
+<body>
+
+
+<div align = "center">
+<div id="showpart"><p id="part1">項目一 &#58;</p></div>
+<div class="slidercontainer"><input type="range" min="0" max="100" value="50" class="slider" id="one" oninput="myFunction()"></div>
+<div id="showvalue"><p align = "center">分數</p><p id="onevalue" onclick="InputScore(1)" >50</p></div>
+
+<div>  </div>
+
+<div id="showpart"><p id="part2">項目二 &#58;</p></div>
+<div class="slidercontainer"><input type="range" min="0" max="100" value="50" class="slider" id="two" oninput="myFunction()"></div>
+<div id="showvalue"><p id="twovalue" onclick="InputScore(2)">50</p></div>
+
+<div>  </div>
+
+<div id="showpart"><p id="part3">項目三 &#58;</p></div>
+<div class="slidercontainer"><input type="range" min="0" max="100" value="50" class="slider" id="three" oninput="myFunction()"></div>
+<div id="showvalue"><p id="threevalue" onclick="InputScore(3)">50</p></div>
+
+<div>  </div>
+
+<div id="showpart"><p id="part4">項目四 &#58;</p></div>
+<div class="slidercontainer"><input type="range" min="0" max="100" value="50" class="slider" id="four" oninput="myFunction()"></div>
+<div id="showvalue"><p id="fourvalue" onclick="InputScore(4)">50</p></div>
+
+<div>  </div>
+
+<div id="showpart"><p id="part5">項目五 &#58; </p></div>
+<div class="slidercontainer"><input type="range" min="0" max="100" value="50" class="slider" id="five" oninput="myFunction()"></div>
+<div id="showvalue"><p id="fivevalue" onclick="InputScore(5)">50</p></div>
+</div>
+
+</body>
+</html>
+<style>
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type="range"]{
+        overflow: hidden;
+        width: 100%;
+        -webkit-appearance: none;
+        background: #5f5d5d;
+    }
+}
+
+input[type = "range"]::-webkit-slider-runnable-track{
+    background: #d3d3d3;
+}
+
+.meber{
+    display: inline-block;
+}
+
+#showvalue{
+    display: inline-block;
+    width: 70px;
+    position: relative;
+    top: -7px;
+}
+
+#showpart{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    top: -7px;
+}
+
+input[type = "range"] ::-ms-fill-lower{ /*Only IE*/
+    background: #5f5d5d;
+}
+
+.slidercontainer{
+    width: 30%;
+    display: inline-block;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0px;
+    height: 25px;
+    background: #5f5d5d;
+    cursor: pointer;
+    box-shadow: -500px 0px 0px 500px #850eb4;
+}
+.slider::-moz-range-thumb{
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+</style>
+<script>
+function myFunction(){
+    document.getElementById("onevalue").innerHTML = document.getElementById("one").value;
+    document.getElementById("twovalue").innerHTML = document.getElementById("two").value;
+    document.getElementById("threevalue").innerHTML = document.getElementById("three").value;
+    document.getElementById("fourvalue").innerHTML = document.getElementById("four").value;
+    document.getElementById("fivevalue").innerHTML = document.getElementById("five").value;
+}
+
+function InputScore(x){
+    var Score = prompt("Please input score!");
+    if (Score != null && Score < 101 && Score > -1 && x == 1) {
+        document.getElementById("one").value = Score;
+        document.getElementById("onevalue").innerHTML = Score;
+    }else if(Score != null && Score < 101 && Score > -1 && x == 2){
+        document.getElementById("two").value = Score;
+        document.getElementById("twovalue").innerHTML = Score;
+    }else if(Score != null && Score < 101 && Score > -1 && x == 3){
+        document.getElementById("three").value = Score;
+        document.getElementById("threevalue").innerHTML = Score;
+    }else if(Score != null && Score < 101 && Score > -1 && x == 4){
+        document.getElementById("four").value = Score;
+        document.getElementById("fourvalue").innerHTML = Score;
+    }else if(Score != null && Score < 101 && Score > -1 && x == 5){
+        document.getElementById("five").value = Score;
+        document.getElementById("fivevalue").innerHTML = Score;
+    }
+}
+
+</script>
