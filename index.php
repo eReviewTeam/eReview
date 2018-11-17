@@ -1,3 +1,6 @@
+<?php
+	include 'init.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +16,82 @@
         <tr>
             <th id="headerFront"></th>
             <th id="headerTitle"><h2>Cities</h2></th>
-            <th id="headerLogin"></th>
+            <th id="headerLogin">
+                <form>
+                    帳號<input type="text" id="accountId" name="account"><br>
+                    密碼<input type="text" id="pwdId" name="password"><br>
+                    <input type="submit" id="loginBtn" value="登入"/>
+                </form>
+            </th>
         </tr>
     </table>
 </header>
 
 <section>
-  <nav>
-   
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
+<table style="width:100%" >
+    <tr>
+        <td colspan="3" style="height:50px;width:250px;" align='center' valign="middle"><h2>專題技能競賽</h2></td>
+    </tr>
+</table>
+<hr>
+<table style="width:100%">
+  <tr>
+    <th>新增</th>
+    <th>修改</th> 
+    <th>刪除</th>
+  </tr>
+</table>
+<hr>
+<center>
+    <table style=  "border:3px #FFAC55 solid;padding:5px;width:400px;height:50px" rules="all" cellpadding='5';>
+        <tr>
+            <td align='center'valign="middle">專題名稱:</td>
+            <td>泰國阿金騎士競賽</td>
+        </tr>
+        <tr>
+            <td align='center'valign="middle">主辦單位:</td>
+            <td>阿金動保協會</td>
+        </tr>
+        <tr>
+            <td style="height:50px" align='center'valign="middle">簡介:</td>
+            <td>想看阿金奔跑競賽嗎?</td>
+        </tr>
+    </table>
+</center>
+<hr>
+<center>
+    <table style=  "border:3px #FFAC55 solid;padding:5px;width:400px;height:50px" rules="all" cellpadding='5';>
+        <tr>
+            <td align='center'valign="middle">專題名稱:</td>
+            <td>野豬騎士競賽</td>
+        </tr>
+        <tr>
+            <td align='center'valign="middle">主辦單位:</td>
+            <td>野豬動保協會</td>
+        </tr>
+        <tr>
+            <td style="height:50px" align='center'valign="middle">簡介:</td>
+            <td>想看野豬奔跑競賽嗎?</td>
+        </tr>
+    </table>
+</center>
+<hr>
+<center>
+    <table style=  "border:3px #FFAC55 solid;padding:5px;width:400px;height:50px" rules="all" cellpadding='5';>
+        <tr>
+            <td align='center'valign="middle">專題名稱:</td>
+            <td>飛天掃把競賽</td>
+        </tr>
+        <tr>
+            <td align='center'valign="middle">主辦單位:</td>
+            <td>魔法協會</td>
+        </tr>
+        <tr>
+            <td style="height:50px" align='center'valign="middle">簡介:</td>
+            <td>想看掃把在天上飛嗎?</td>
+        </tr>
+    </table>
+</center>
 </section>
 
 <footer>
