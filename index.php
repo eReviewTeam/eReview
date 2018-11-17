@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 <title>CSS Template</title>
-<meta charset="utf-8">
+<meta charset="Big-5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -15,7 +15,7 @@
     <table id="headerTable">
         <tr>
             <th id="headerFront"></th>
-            <th id="headerTitle"><h2>Cities</h2></th>
+            <th id="headerTitle"><h2>明志評分系統</h2></th>
             <th id="headerLogin">
                 <form>
                     帳號<input type="text" id="accountId" name="account"><br>
@@ -95,8 +95,9 @@
 </section>
 
 <footer>
-  <p>Footer</p>
+  <p>開發人員 : 明志科技大學電子系子三甲</p>
 </footer>
 
 </body>
 </html>
+
