@@ -14,7 +14,14 @@
 <header>
     <table id="headerTable">
         <tr>
-            <th id="headerFront"></th>
+            <th id="headerFront">
+            <ul>
+            <h6><li>專案</li>
+            <li>組別清單</li>
+            <li>競賽清單</li>
+            <li>統計</li></h6>
+            </ul>
+            </th>
             <th id="headerTitle"><h2>明志評分系統</h2></th>
             <th id="headerLogin">
                 <form>
