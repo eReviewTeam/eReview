@@ -1,3 +1,3 @@
 <?php
-	//include 'connectMySQLConfig.php';
+	include 'connectMySQLConfig.php';
 ?>
