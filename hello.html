@@ -1,0 +1,65 @@
+﻿<html>
+
+<head>
+<title>評分系統權限</title>
+</head>
+
+<body>
+<h1><marquee direction="right" scrollamount="5" behavior="alternate">Hello! 這裡是評分系統</marquee></h1> 
+<p><img src="welcome.gif"><img src="welcome2.gif"></p>
+<p><strong>教師權限:</strong>可新增、修改、刪除成績評分以及登入系統</p>
+<p><strong>學生權限:</strong>可登入系統查看成績</p>
+<hr>
+
+<table style="border:3px #cccccc solid;" cellpadding="10" border='2'>
+<th>教師:</th><th>學生:</th>
+
+<tr>
+<td>
+<a href="http://www.google.com/"><input type="button" id="1" value="新增"></a>
+<a href="http://www.google.com/"><input type="button" id="2" value="修改"></a>
+<a href="http://www.google.com/"><input type="button" id="3" value="刪除"></a>
+<a href="http://www.google.com/"><input type="button" id="4" value="查詢"></a>
+</td>
+
+<td>
+<a href="http://www.google.com/"><input type="button" id="5" disabled="disabled" value="新增"></a>
+<a href="http://www.google.com/"><input type="button" id="6" disabled="disabled" value="修改"></a>
+<a href="http://www.google.com/"><input type="button" id="7" disabled="disabled" value="刪除"></a>
+<a href="http://www.google.com/"><input type="button" id="8" value="查詢"></a>
+</td>
+</tr>
+</table>
+
+<hr>
+<a href="http://www.google.com/"><BUTTON>重新登入</BUTTON></a>
+<p>
+<script language="javascript">
+function ChangeDisabled(value){
+　if(value=='1'){
+　document.getElementById('1').disabled=false;
+document.getElementById('2').disabled=false;
+document.getElementById('3').disabled=false;
+document.getElementById('4').disabled=false;
+document.getElementById('5').disabled=true;
+document.getElementById('6').disabled=true;
+document.getElementById('7').disabled=true;
+document.getElementById('8').disabled=false;　// 變更欄位為可用
+　}else{
+document.getElementById('1').disabled=true;
+document.getElementById('2').disabled=true;
+document.getElementById('3').disabled=true;
+document.getElementById('4').disabled=true;
+document.getElementById('5').disabled=false;
+document.getElementById('6').disabled=false;
+document.getElementById('7').disabled=false;
+document.getElementById('8').disabled=true;　// 變更欄位為禁用
+　}
+}
+</script>
+<input type="button" value='教師' onclick="ChangeDisabled(1)">
+<input type="button" value='學生' onclick="ChangeDisabled(2)">
+
+</body>
+
+</html>

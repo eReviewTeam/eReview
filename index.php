@@ -14,7 +14,9 @@ include 'init.php';
 <header>
     <table id="headerTable">
         <tr>
-            <th id="headerFront"></th>
+            <th id="headerFront">
+            
+            </th>
             <th id="headerTitle"><h2>明志評分系統</h2></th>
             <th id="headerLogin">
                 <form>
@@ -26,6 +28,22 @@ include 'init.php';
         </tr>
     </table>
 </header>
+
+<header>
+<table id="headerFunction">
+<table style="width:100%">
+  <tr>
+    <th><h6>專案</h6></th>
+    <th><h6>組別清單</h6></th> 
+    <th><h6>競賽清單</h6></th>
+    <th><h6>統計</h6></th>
+  </tr>
+</table>
+</table>
+</header>
+
+
+
 
 <section>
 <table style="width:100%">
